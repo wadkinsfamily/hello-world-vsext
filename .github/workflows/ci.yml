@@ -19,6 +19,15 @@ jobs:
         run: npm ci
       - name: Compile
         run: npm run compile
+      - name: Debug: show package and environment
+        run: |
+          echo "=== package.json ==="
+          cat package.json
+          echo "=== ls -la workspace ==="
+          ls -la
+          echo "=== node and npm versions ==="
+          node -v
+          npm -v
       - name: Package VSIX
         run: npx vsce package --no-dependencies
       - name: Upload artifact
