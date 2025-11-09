@@ -35,3 +35,25 @@ jobs:
         with:
           name: hello-world-vsix
           path: ./*.vsix
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && contains(github.ref, 'refs/heads/main')
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install vsce
+        run: npm install --no-save vsce
+      - name: Publish to Marketplace
+        env:
+          VSCE_PAT: "${{ secrets.VSCE_PAT }}"
+        run: |
+          if [ -z "$VSCE_PAT" ]; then
+            echo "VSCE_PAT secret is not set. Skipping publish.";
+            exit 1;
+          fi
+          npx vsce publish -p "$VSCE_PAT"

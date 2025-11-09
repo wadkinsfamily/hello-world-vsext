@@ -1,7 +1,7 @@
 {
   "name": "hello-world",
   "displayName": "Hello World",
-  "publisher": "test-publisher",
+  "publisher": "wadkins-family",
   "version": "0.0.2",
   "license": "MIT",
   "repository": {
@@ -25,6 +25,7 @@
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
+    "publish:vsce": "npx vsce publish",
     "package": "vsce package --no-dependencies",
     "pretest": "npm run compile",
     "test": "node ./out/test/runTest.js"
