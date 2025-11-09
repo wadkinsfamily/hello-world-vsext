@@ -2,6 +2,9 @@ node_modules/
 out/
 *.vsix
 .vscode/
-/.github/
+# Ignore most things under .github but allow workflows to be tracked
+/.github/*
+!/.github/workflows/
+!/.github/workflows/**
 /.DS_Store
 .env
