@@ -1,6 +1,6 @@
 {
   "name": "hello-world-vsext",
-  "displayName": "Hello World",
+  "displayName": "Hello World (VSEXT)",
   "publisher": "wadkins-family",
   "version": "0.0.3",
   "description": "Minimal Hello World extension used for VSIX and Marketplace testing.",
