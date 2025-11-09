@@ -3,5 +3,3 @@ out/test
 .vscode-test
 *.vsix
 dist
-README.md
-*** End Patch

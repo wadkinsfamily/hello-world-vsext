@@ -3,6 +3,8 @@
   "displayName": "Hello World",
   "publisher": "wadkins-family",
   "version": "0.0.2",
+  "description": "Minimal Hello World extension used for VSIX and Marketplace testing.",
+  "keywords": ["hello","vscode","extension"],
   "license": "MIT",
   "repository": {
     "type": "git",
