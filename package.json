@@ -2,7 +2,7 @@
   "name": "hello-world-vsext",
   "displayName": "Hello World (VSEXT)",
   "publisher": "wadkins-family",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Minimal Hello World extension used for VSIX and Marketplace testing.",
   "keywords": ["hello","vscode","extension"],
   "license": "MIT",
@@ -11,7 +11,7 @@
     "url": "https://github.com/wadkinsfamily/hello-world-vsext.git"
   },
   "engines": {
-    "vscode": "^1.105.0"
+    "vscode": "^1.85.0"
   },
   "categories": ["Other"],
   "activationEvents": ["onCommand:hello-world.helloWorld"],
@@ -35,7 +35,7 @@
   "devDependencies": {
     "typescript": "^5.9.3",
     "@types/node": "^22.0.0",
-    "@types/vscode": "^1.105.0",
+    "@types/vscode": "^1.85.0",
     "vsce": "^2.10.0"
   },
   "dependencies": {}
