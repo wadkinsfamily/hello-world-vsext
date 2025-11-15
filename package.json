@@ -2,7 +2,7 @@
   "name": "hello-world-vsext",
   "displayName": "Hello World (VSEXT)",
   "publisher": "wadkins-family",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Minimal Hello World extension used for VSIX and Marketplace testing.",
   "keywords": ["hello","vscode","extension"],
   "license": "MIT",
